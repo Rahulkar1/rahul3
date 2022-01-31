@@ -1,0 +1,32 @@
+<section>
+    <div class="container">
+      <div class="calculator">
+        <div class="display">
+          <div class="display-1">{{input}}</div>
+          <div class="display-2">{{result}}</div>
+          <div class="temp-result">{{result}}</div>
+        </div>
+        <div class="all_button">
+          <div class="button all-clear" (click)="allClear()">C</div>
+          <div class="button last-entity-clear" (click)="clear()">CE</div>
+          <div class="button operation">%</div>
+          <div class="button operation" (click)="pressOperator('/')">/</div>
+          <div class="button number" (click)="pressNum('7')">7</div>
+          <div class="button number" (click)="pressNum('8')">8</div>
+          <div class="button number" (click)="pressNum('9')">9</div>
+          <div class="button operation" (click)="pressOperator('*')">x</div>
+          <div class="button number" (click)="pressNum('4')">4</div>
+          <div class="button number" (click)="pressNum('5')">5</div>
+          <div class="button number" (click)="pressNum('6')">6</div>
+          <div class="button operation" (click)="pressOperator('-')">-</div>
+          <div class="button number" (click)="pressNum('1')">1</div>
+          <div class="button number" (click)="pressNum('2')">2</div>
+          <div class="button number" (click)="pressNum('3')">3</div>
+          <div class="button operation" (click)="pressOperator('+')">+</div>
+          <div class="button btn-0 number" (click)="pressNum('0')">0</div>
+          <div class="button number dot" (click)="pressOperator('.')">.</div>
+          <div class="button equal" (click)="getAnswer()">=</div>
+        </div>
+      </div>
+    </div>
+  </section>

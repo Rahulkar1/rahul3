@@ -1,0 +1,18 @@
+
+<div class="card">
+    <h2 class="title">Loan Calculater</h2><br><hr><br>
+    <div class="email-login">
+      <label for="email"> <b> Principle of Amount:</b></label>
+      <input type="text" class="price" [(ngModel)]="price" placeholder="Principle of Amount" required>
+      <label for="psw"><b>Rate of Interest:</b></label>
+      <input type="text" class="roi" [(ngModel)]="rate" placeholder="Rate of Interest" required>
+      <label for="psw"><b>Time:</b></label>
+      <input type="text" class="month" [(ngModel)]="month" placeholder="Month" required>
+      <label for="psw"><b>EMI:</b></label>
+      <input type="text" class="emi" [(ngModel)]="total" placeholder="EMI" required disabled>
+      <label for="psw"><b>Total:</b></label>
+      <input type="text" class="total" [(ngModel)]="interest" placeholder="total" required disabled>
+    </div>
+    <button class="cta-btn" (click)="calculate()" value="Calculate">Calculate</button>
+    <button class="cta-btn" (click)="clearValue()">Reset</button>
+  </div>

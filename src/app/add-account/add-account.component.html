@@ -1,0 +1,24 @@
+
+<div class="card">
+    <h2 class="title">Add Account</h2><br><hr><br>
+    <div class="email-login">
+      <label for="email"> <b> Name:</b></label>
+      <input type="text" class="price" [(ngModel)]="name" placeholder="Name" required>
+      <label for="psw"><b>UPI Id:</b></label>
+      <input type="text" class="roi" [(ngModel)]="upiid" placeholder="UPI Id" required>
+      <label for="psw"><b>Phone Number:</b></label>
+      <input type="text" class="month" [(ngModel)]="number" placeholder="Phone Number" required>
+      <label for="psw"><b>Account Number:</b></label>
+      <input type="text" class="emi"  [(ngModel)]="accNumber" placeholder="Account Number" required >
+      <label for="psw"><b>Initial Balance:</b></label>
+      <input type="text" class="total" [(ngModel)]="iBalance" placeholder="Initial Balance" required>
+      <label for="psw"><b>Available Balance:</b></label>
+      <input type="text" class="total" [(ngModel)]="aBalance" placeholder="Available Balance" required>
+    </div>
+    <button class="cta-btn" (click)="savedata()" value="Calculate">Save</button>
+   
+  </div>
+
+
+
+
